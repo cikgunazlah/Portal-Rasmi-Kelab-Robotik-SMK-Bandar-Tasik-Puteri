@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Rasmi Kelab Robotik SMK Bandar Tasik Puteri</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo-sekolah">
+        <img src="images/logo-sekolah.jpg" alt="logo-Sekolah">
+    </div>
+
+    <div class="tajuk">
+
+        <h3>PORTAL RASMI</h3>
+
+        <h1>KELAB ROBOTIK</h1>
+
+        <h2>SMK BANDAR TASIK PUTERI</h2>
+
+        <p>Explore • Create • Innovate</p>
+
+    </div>
+
+    <div class="logo-robotik">
+        <img src="images/logo-robotik.jpg" alt="Logo Robotik">
+    </div>
+
+</header>
+
+<!-- ================= NAVIGATION ================= -->
+
+    <nav>
+    <a href="#home">
+        <i class="fas fa-house"></i>
+        Home
+    </a>
+
+    <a href="#profil">
+        <i class="fas fa-users"></i>
+        Profil
+    </a>
+
+    <a href="#aktiviti">
+        <i class="fas fa-calendar"></i>
+        Aktiviti
+    </a>
+
+    <a href="#galeri">
+        <i class="fas fa-image"></i>
+        Galeri
+    </a>
+
+    <a href="#hubungi">
+        <i class="fas fa-envelope"></i>
+        Hubungi
+    </a>
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-kiri">
+
+        <span class="tagline">
+            <i class="fas fa-microchip"></i>
+            Future Starts Here
+        </span>
+
+        <h1>
+            PORTAL KELAB
+            <span>ROBOTIK</span>
+        </h1>
+
+        <h3>SMK BANDAR TASIK PUTERI</h3>
+
+        <div class="info">
+
+            <div class="info-box">
+
+                <i class="fas fa-sun"></i>
+
+                <span id="ucapan">
+                    Selamat Datang
+                </span>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fas fa-clock"></i>
+
+                <span id="jam">
+                    00:00:00
+                </span>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fas fa-calendar-days"></i>
+
+                <span id="tarikh">
+                    Loading...
+                </span>
+
+            </div>
+
+        </div>
+
+        <a href="#profil" class="btn-masuk">
+
+            <i class="fas fa-rocket"></i>
+
+            MASUK KE PORTAL
+
+        </a>
+
+    </div>
+
+    <div class="hero-kanan">
+
+    <div class="robonex-box">
+
+    <div class="speech">
+        Hai! Saya RoboNex 🤖<br>
+        Selamat datang ke Portal Robotik!
+    </div>
+
+    <img src="images/robonex.jpg"
+     id="robonex"
+     class="robonex"
+         alt="RoboNex"
+     onclick="playRobotSound()">
+
+</div>
+
+    <img id="slideshow"
+         src="images/2026-coding.jpg"
+         alt="Slideshow Kelab Robotik">
+
+</div>
+
+</section>
+
+<!-- ===================== MISI SETERUSNYA ===================== -->
+<section id="coming-event" class="coming-event">
+    <div class="container">
+
+        <h2>🚀 Misi Seterusnya</h2>
+        <p class="subtitle">
+            Kelab Robotik SMK Bandar Tasik Puteri akan menyertai pertandingan berikut.
+        </p>
+
+        <div class="event-card">
+
+            <div class="event-image">
+                <img src="images/grand-sumo-poster.jpg" alt="Grand Sumo Rumble Challenge">
+            </div>
+
+            <div class="event-info">
+
+                <span class="status">🔥 Akan Datang</span>
+                <div class="countdown" id="countdown">
+    ⏳ Lagi ...
+</div>
+
+                <h3>The Grand Sumo Rumble Challenge 2.0</h3>
+
+                <p>
+                    Kelab Robotik SMK Bandar Tasik Puteri sedang membuat persediaan
+                    untuk menyertai pertandingan robot sumo yang menghimpunkan
+                    pasukan-pasukan dari seluruh Malaysia.
+                </p>
+
+                <ul>
+                    <li>📅 <strong>Tarikh:</strong> 22–23 Ogos 2026</li>
+                    <li>📍 <strong>Lokasi:</strong> The Summit USJ, Subang Jaya</li>
+                    <li>🤖 <strong>Kategori:</strong> Robot Sumo (Sekolah Menengah)</li>
+                    <li>👥 <strong>Status:</strong> Latihan & Persiapan Robot Sedang Berjalan</li>
+                </ul>
+
+                <a href="images/grand-sumo-poster.jpg"
+   target="_blank"
+   class="btn-event"
+   onclick="playPopupSound()">
+                    📄 Lihat Poster Pertandingan
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- PROFIL KELAB ROBOTIK -->
+<!-- ========================= -->
+
+<section id="profil" class="profil">
+
+    <h2>🤖 Profil Kelab Robotik</h2>
+    <p class="profil-tagline">
+        Explore • Create • Innovate
+    </p>
+
+    <div class="profil-grid">
+
+        <div class="profil-card">
+            <h3>📖 Sejarah</h3>
+
+            <p>
+                Kelab Robotik SMK Bandar Tasik Puteri ditubuhkan bagi
+                memupuk minat murid terhadap bidang robotik,
+                pengaturcaraan dan teknologi selaras dengan
+                perkembangan Revolusi Industri 4.0.
+            </p>
+        </div>
+
+        <div class="profil-card">
+            <h3>🎯 Visi</h3>
+
+            <p>
+                Melahirkan murid yang kreatif,
+                inovatif dan berkemahiran
+                dalam bidang robotik.
+            </p>
+        </div>
+
+        <div class="profil-card">
+            <h3>🚀 Misi</h3>
+
+            <p>
+                Membimbing ahli menghasilkan
+                projek robotik melalui
+                pembelajaran berasaskan projek
+                serta pertandingan inovasi.
+            </p>
+        </div>
+
+        <div class="profil-card">
+            <h3>🎓 Objektif</h3>
+
+            <ul>
+                <li>Menguasai asas robotik.</li>
+                <li>Meningkatkan kemahiran pengaturcaraan.</li>
+                <li>Menghasilkan projek inovasi.</li>
+                <li>Melahirkan murid berfikiran kreatif.</li>
+            </ul>
+        </div>
+
+        <div class="profil-card">
+            <h3>👨‍🏫 Guru Penasihat</h3>
+
+            <p>
+                👩 Pn Nazlah Bt Mohd Said
+            </p>
+
+            <p>
+                👨 En Muhammad Ruzaimi Bin Mohd Bahtiar
+            </p>
+        </div>
+
+        <div class="profil-card">
+            <h3>👥 Statistik</h3>
+
+            <p>Ahli Aktif : <strong>9 Orang</strong></p>
+            <p>Guru Penasihat : <strong>2 Orang</strong></p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ========================= -->
+<!-- AKTIVITI KELAB ROBOTIK -->
+<!-- ========================= -->
+
+<section id="aktiviti" class="aktiviti">
+
+    <section class="latest-event">
+    <h2>🏆 Aktiviti Terkini</h2>
+    International Robotic Challenge (IRC) 2026 
+
+    <div class="event-info">
+    <span>📅 24 Julai 2026</span>
+    <span>📍 IIUM Gombak</span>
+</div>
+
+        <p>
+            Kelab Robotik SMK Bandar Tasik Puteri telah menyertai
+            <strong>International Robotic Challenge (IRC) 2026</strong>
+            bagi memberi pendedahan kepada murid dalam bidang robotik,pengaturcaraan dan inovasi. Penyertaan ini turut memupuk keyakinan,kreativiti dan semangat kerja berpasukan.
+        </p>
+
+        <div class="gallery-grid">
+            <img src="images/IRC1.jpg" alt="IRC 1">
+            <img src="images/IRC2.jpg" alt="IRC 2">
+            <img src="images/IRC3.jpg" alt="IRC 3">
+        </div>
+    </div>
+</section>
+
+    <h2>📅 Aktiviti Kelab Robotik</h2>
+
+    <p class="aktiviti-tagline">
+        Perjalanan dan penglibatan Kelab Robotik SMK Bandar Tasik Puteri.
+    </p>
+
+    <!-- 2026 -->
+
+    <div class="tahun">
+
+        <h3>📅 2026</h3>
+
+        <div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2026-coding.jpg" alt="Program Coding For All">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>💻 Program Coding For All</h4>
+
+        <p><strong>📅 Tarikh:</strong> 13 Jun 2026</p>
+
+        <p><strong>📍 Tempat:</strong> Makmal Komputer</p>
+
+        <p>Bengkel pengenalan Raspberry Pi Pico kepada murid RBT Tingkatan 1 hingga 3 dan dibantu oleh guru muda ahli Kelab Robotik.</p>
+
+    </div>
+
+</div>
+
+        <div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2026-stemfinity.jpg" alt="STEMFINITY DAY">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🚀 STEMFINITY DAY</h4>
+
+        <p><strong>📅 Tarikh:</strong> 15 Januari 2026</p>
+
+        <p><strong>📍 Tempat:</strong> SMK Bandar Tasik Puteri</p>
+
+        <p>Program STEM yang melibatkan pelbagai aktiviti dan pameran teknologi.</p>
+
+    </div>
+
+</div>
+
+    </div>
+<div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2026-nexus.jpg" alt="Nexus STEM">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🏅 Nexus STEM For All 1.0</h4>
+
+        <p><strong>🏆 Pencapaian:</strong> Tempat Ke-5</p>
+
+        <p><strong>📍 Program:</strong> Karnival STEM TVET BILU</p>
+
+        <p>Penyertaan pasukan Kelab Robotik dalam pertandingan robotik.</p>
+
+    </div>
+
+</div>
+
+<div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2026-robotbattlechallenge.jpg" alt="Robot Battle Challenge">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🥉 Robot Battle Challenge</h4>
+
+        <p><strong>🏆 Pencapaian:</strong> Tempat Ke-3</p>
+
+        <p><strong>📍 Pertandingan:</strong> Karnival STEM Daerah Gombak</p>
+
+        <p>Pasukan Kelab Robotik berjaya meraih tempat ketiga dalam pertandingan Robot Battle Challenge.</p>
+
+    </div>
+
+</div>
+
+    <!-- 2025 -->
+
+    <div class="tahun">
+
+        <h3>📅 2025</h3>
+
+        <div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2025-tvet.jpg" alt="Pelancaran Karnival TVET">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🎉 Pelancaran Karnival TVET</h4>
+
+        <p><strong>📅 Tarikh:</strong> 30 Jun 2025</p>
+
+        <p><strong>📍 Tempat:</strong> SMK Bandar Tasik Puteri</p>
+
+        <p>Majlis pelancaran Karnival TVET peringkat sekolah yang melibatkan penyertaan warga sekolah.</p>
+
+    </div>
+
+</div>
+
+        <div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2025-robotbattlechallenge.jpg" alt="Robot Battle Challenge">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🥇 Robot Battle Challenge</h4>
+
+        <p><strong>🏆 Pencapaian:</strong> Johan</p>
+
+        <p><strong>📍 Pertandingan:</strong> Karnival STEM Daerah Gombak</p>
+
+        <p>Pasukan Kelab Robotik berjaya muncul sebagai Johan dalam pertandingan Robot Battle Challenge.</p>
+
+    </div>
+
+</div>
+
+        <div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2025-sumo.jpg" alt="Robot Sumo">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🏅 Robot Sumo Rumble Challenge</h4>
+
+        <p><strong>🏆 Pencapaian:</strong> Tempat Ke-5</p>
+
+        <p>Penyertaan Kelab Robotik dalam pertandingan Robot Sumo Rumble Challenge.</p>
+
+    </div>
+
+</div>
+
+<div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2025-permana.jpg" alt="Anugerah Permana Citra">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🥈 Anugerah Permana Citra</h4>
+
+        <p><strong>🏆 Anugerah:</strong> Perak</p>
+
+        <p>Kelab Robotik menerima pengiktirafan Anugerah Perak dalam Majlis Anugerah Permana Citra.</p>
+
+    </div>
+
+</div>
+    <!-- 2024 -->
+
+    <div class="tahun">
+
+        <h3>📅 2024</h3>
+
+        <div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2024-stem.jpg" alt="Karnival STEM Negeri Selangor">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🤖 Karnival STEM Peringkat Negeri Selangor</h4>
+
+        <p><strong>🏆 Pencapaian:</strong> Tempat Ke-8</p>
+
+        <p>Penyertaan Kelab Robotik di Karnival STEM Peringkat Negeri Selangor.</p>
+
+    </div>
+
+</div>
+
+    <div class="aktiviti-item">
+
+    <div class="aktiviti-image">
+        <img src="images/2024-permana.jpg" alt="Anugerah Permana Citra">
+    </div>
+
+    <div class="aktiviti-info">
+        <h4>🥈 Anugerah Permana Citra</h4>
+
+        <p><strong>🏆 Anugerah:</strong> Perak</p>
+
+        <p>Kelab Robotik menerima pengiktirafan Anugerah Perak dalam Majlis Anugerah Permana Citra.</p>
+
+    </div>
+
+</div>
+
+</section>
+
+     <!-- ===========================
+     HALL OF FAME
+=========================== -->
+
+<section id="halloffame" class="halloffame">
+
+    <h2>🏆 Hall of Fame<h2>
+
+    <p class="hall-tagline">
+        Galeri Kejayaan Kelab Robotik SMK Bandar Tasik Puteri
+    </p>
+
+    <h3 class="hall-category">🇲🇾 Pencapaian Peringkat Kebangsaan</h3>
+
+
+<div class="hall-card">
+
+    <div class="hall-image">
+        <img src="images/2025-sumo.jpg"
+             alt="Sumo Rumble Challenge 2025">
+    </div>
+
+    <div class="hall-info">
+
+        <span class="badge gold">TEMPAT KE-5</span> 
+
+        <h3>Sumo Rumble Challenge 2025</h3>
+
+        <p><strong>Pertandingan:</strong> Sumo Rumble Challenge (Peringkat Kebangsaan)</p>
+
+        <p><strong>Tahun:</strong> 2025</p>
+
+        <p>Kelab Robotik berjaya muncul sebagai Tempat Ke-5 dalam pertandingan Sumo Rumble Challenge Peringkat Kebangsaan.</p>
+
+    </div>
+
+</div>
+
+
+    <h3 class="hall-category">🇲🇾 Pencapaian Peringkat Negeri</h3>
+
+
+<div class="hall-card">
+
+    <div class="hall-image">
+        <img src="images/2024-stem.jpg"
+             alt="Robot Battle Challenge 2024">
+    </div>
+
+    <div class="hall-info">
+
+        <span class="badge gold">TEMPAT KE-8</span> 
+
+        <h3>Robot Battle Challenge 2024</h3>
+
+        <p><strong>Pertandingan:</strong> Robot Battle Challenge (Peringkat Negeri)</p>
+
+        <p><strong>Tahun:</strong> 2024</p>
+
+        <p>Kelab Robotik berjaya muncul sebagai Tempat Ke-8 dalam pertandingan Robot Battle Challenge Peringkat Negeri Selangor.</p>
+
+    </div>
+
+</div>
+
+ <h3 class="hall-category">🇲🇾 Pencapaian Peringkat Daerah</h3>
+
+<div class="hall-card">
+
+    <div class="hall-image">
+        <img src="images/2025-robotbattlechallenge.jpg"
+             alt="Robot Battle Challenge 2025">
+    </div>
+
+    <div class="hall-info">
+
+        <span class="badge gold">JOHAN</span> 
+
+        <h3>Robot Battle Challenge 2025</h3>
+
+        <p><strong>Pertandingan:</strong> Karnival STEM Daerah Gombak</p>
+
+        <p><strong>Tahun:</strong> 2025</p>
+
+        <p>Kelab Robotik berjaya muncul sebagai Tempat Pertama dalam pertandingan Robot Battle Challenge Peringkat Daerah Gombak sempena Karnival STEM.</p>
+
+    </div>
+
+</div>
+
+<div class="hall-card">
+
+    <div class="hall-image">
+        <img src="images/2026-robotbattlechallenge.jpg" alt="Robot Battle Challenge 2026">
+    </div>
+
+    <div class="hall-info">
+
+        <span class="badge bronze">🥉 TEMPAT KE-3</span>
+
+        <h3>Robot Battle Challenge 2026</h3>
+
+        <p><strong>Pertandingan:</strong> Karnival STEM Daerah Gombak</p>
+
+        <p><strong>Tahun:</strong> 2026</p>
+
+        <p>Pasukan Kelab Robotik berjaya meraih Tempat Ke-3 dalam pertandingan Robot Battle Challenge.</p>
+
+    </div>
+
+</div>
+
+<div class="hall-card">
+
+    <div class="hall-image">
+        <img src="images/2026-nexus.jpg" alt="Robot Battle Challenge 2026">
+    </div>
+
+    <div class="hall-info">
+
+        <span class="badge bronze">🥉 TEMPAT KE-5</span>
+
+        <h3>Robot Battle Challenge 2026</h3>
+
+        <p><strong>Pertandingan:</strong> Karnival TVET BILU Daerah Gombak</p>
+
+        <p><strong>Tahun:</strong> 2026</p>
+
+        <p>Pasukan Kelab Robotik berjaya meraih Tempat Ke-5 dalam pertandingan Robot Battle Challenge.</p>
+
+    </div>
+
+</div>
+
+<h3 class="hall-category">🇲🇾 Pencapaian Peringkat Sekolah</h3>
+
+<div class="hall-card">
+
+    <div class="hall-image">
+        <img src="images/2025-permana.jpg"
+             alt="Majlis Permana Citra 2025">
+    </div>
+
+    <div class="hall-info">
+
+        <span class="badge gold">ANUGERAH PERAK</span> 
+
+        <h3>Majlis Permana Citra 2025</h3>
+
+        <p><strong>Majlis:</strong> Permana Citra (Peringkat Sekolah)</p>
+
+        <p><strong>Tahun:</strong> 2025</p>
+
+        <p>Kelab Robotik berjaya menerima Anugerah Perak Majlis Permana Citra Peringkat Sekolah.</p>
+
+    </div>
+
+</div>
+
+<div class="hall-card">
+
+    <div class="hall-image">
+        <img src="images/2024-permana.jpg"
+             alt="Majlis Permana Citra 2024">
+    </div>
+
+    <div class="hall-info">
+
+        <span class="badge gold">ANUGERAH PERAK</span> 
+
+        <h3>Majlis Permana Citra 2024</h3>
+
+        <p><strong>Majlis:</strong> Permana Citra (Peringkat Sekolah)</p>
+
+        <p><strong>Tahun:</strong> 2024</p>
+
+        <p>Kelab Robotik berjaya menerima Anugerah Perak Majlis Permana Citra Peringkat Sekolah.</p>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- ==================== GALERI ==================== -->
+<section id="galeri" class="section">
+
+    <h2>🖼️ Galeri</h2>
+
+    <p class="section-desc">
+        Sorotan aktiviti dan pencapaian Kelab Robotik SMK Bandar Tasik Puteri.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/2026-coding.jpg" alt="Coding For All">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/2026-stemfinity.jpg" alt="STEMFINITY Day">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/2026-nexus.jpg" alt="Nexus STEM">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/2026-robotbattlechallenge.jpg" alt="Robot Battle">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/2025-robotbattlechallenge.jpg" alt="Robot Battle 2025">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/2025-sumo.jpg" alt="Robot Sumo">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/2024-stem.jpg" alt="Karnival STEM">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/2025-permana.jpg" alt="Permana Citra">
+        </div>
+
+    </div>
+
+<section id="galeri" data-aos="fade-up"></section>
+
+</section>
+
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Kelab Robotik SMK Bandar Tasik Puteri</p>
+    <p>Portal dibangunkan oleh</p>
+    <h3>Pn. Nazlah Bt. Mohd Said</h3>
+</footer>
+
+<button id="topBtn">⬆</button>
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+
+</body>
+</html>
